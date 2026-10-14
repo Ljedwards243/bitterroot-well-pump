@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Voicemail-only line for bitterrootwellpump.com. Twilio number setting: "A call comes in" = Webhook,
+     https://bitterrootwellpump.com/twilio/voice.xml, HTTP GET. Same setup as the earlier Website Landlord
+     numbers: Polly.Joanna-Neural voice, 2-minute recording with transcription.
+     Calls, recordings and transcripts appear in Twilio under Monitor > Logs > Calls. -->
+<Response>
+  <Say voice="Polly.Joanna-Neural">Thanks for calling Bitterroot Valley Well Pump Help. We connect valley homeowners with independent local well and pump companies, and we're not affiliated with any company of a similar name. Please leave your name, phone number, the address of the property, and whether you're without water right now, and we'll call you back shortly.</Say>
+  <Record maxLength="120" playBeep="true" transcribe="true" action="https://bitterrootwellpump.com/twilio/goodbye.xml" method="GET" />
+</Response>

@@ -22,9 +22,8 @@ All live in `lib/site.ts`. Anything that would render a placeholder checks `isCo
 
 Other open items (code comments mark them):
 
-- **Brand name** "Bitterroot Valley Well Pump Help" is the brief's recommendation and still needs your approval (`site.name`, brief §16 item 1).
-- **Disclosure wording**, including the non-affiliation line: `site.disclosure` (brief §16 item 2).
-- **Voicemail greeting:** if a caller asks for Bitterroot Pump Service, the greeting should say this line connects with independent local pros and is not that company (brief §1).
+- ~~Brand name and disclosure~~ Approved by Luke 2026-10-14 (brief §16 items 1-2).
+- **Voicemail:** `public/twilio/voice.xml` (greeting, Polly.Joanna-Neural, records up to 2 minutes with transcription, includes the non-affiliation line from brief §1) and `public/twilio/goodbye.xml`. In Twilio, the number's "A call comes in" must be **Webhook → `https://bitterrootwellpump.com/twilio/voice.xml` → HTTP GET**. `/twilio/` is disallowed in robots.txt. Calls, recordings and transcripts show in Twilio under Monitor → Logs → Calls.
 - **Service area** town sections (`app/service-area/page.tsx`) use basic orientation only (north/south end, east/west side). Review them, and add any local knowledge (housing types, acreage, well houses) before splitting a town into its own page (brief §7).
 - **Source links:** confirm the DNRC licensee list and DLI registration lookup are current (`lib/sources.ts`, brief §7).
 - **Privacy policy** "Calls" section assumes a voicemail-only line; update it if calls start forwarding or recording changes (`app/privacy/page.tsx`).

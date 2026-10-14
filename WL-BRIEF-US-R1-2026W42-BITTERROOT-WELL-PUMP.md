@@ -6,7 +6,7 @@
 
 **Priority: HIGH.** Strongest rating in this week's research: thin, dated competitor sites, directories with almost no Bitterroot content, and 10+ local pump and drilling companies that could rent it. A dead well pump means no water in the house, so leads are urgent and high-value. Winter freezes add a seasonal bump, so the site should be live and indexed before January 2027.
 
-**Status (2026-10-14):** homepage design approved in Claude Design (Website Landlord design system, river-slate accent `#2b5d78`). Luke approved adding `/frozen-well-line` (§5–§7). Building with the working brand "Bitterroot Valley Well Pump Help" until §16 item 1 is confirmed.
+**Status (2026-10-14):** homepage design approved in Claude Design (Website Landlord design system, river-slate accent `#2b5d78`). Luke approved adding `/frozen-well-line` (§5–§7). Brand "Bitterroot Valley Well Pump Help" and the disclosure approved by Luke 2026-10-14. Voicemail greeting served from `/twilio/voice.xml` on the site.
 
 **Two corrections to earlier research (2026-10-14):**
 1. A real local business, **Bitterroot Pump Service Inc.** (Florence, MT), has a name one word off our domain. See §1 and §11. This needs Luke's decision before launch.
@@ -22,7 +22,7 @@
 
 **Name-similarity warning (decision needed):** Bitterroot Pump Service Inc. (635 Tie Chute Ln, Florence, MT; established 2004; "complete water systems to Missoula and the Bitterroot valley") is an established local pump company. Our domain differs from their name by one word. Risks: callers who meant to reach them land on us; the company could see the site as trading on their name; Google or AI assistants could blur the two. Geographic-descriptive names are weak marks, so this is not a reason to drop the domain, but the build must keep clear distance:
 - On-site brand must not be "Bitterroot Pump" or "Bitterroot Pump Service" in any form.
-- **Recommended brand:** "Bitterroot Valley Well Pump Help" [TODO: Luke to approve or replace]. "Valley" and "Help" separate us from their name, and "Help" signals a connector, not a contractor.
+- **Brand (approved 2026-10-14):** "Bitterroot Valley Well Pump Help". "Valley" and "Help" separate us from their name, and "Help" signals a connector, not a contractor.
 - Footer + About add: "Not affiliated with any pump or drilling company of a similar name." (Do not name them on the site.)
 - Do not bid on or target the keyword "Bitterroot Pump Service" anywhere (titles, metas, copy, schema, ads).
 - If a caller asks for Bitterroot Pump Service by name, voicemail/IVR should say this line connects with independent local pros and is not that company.
@@ -166,12 +166,12 @@ Per WL-BUILD-STANDARDS §8, plus these well-pump-specific rules:
 - **We are not a pump or well company.** Never say or imply that we repair, install, diagnose, drill, or test. Use "connect you with an established local well and pump company."
 - **No licensing promise for pump work.** Montana does not license pump installers, so never say "licensed pump pros" or "state-certified." "Licensed" may describe only Board of Water Well Contractors licensees, and only for drilling, well alteration, rehabilitation, or abandonment.
 - **Routing promise:** until a tenant is signed, calls go to voicemail only. Before routing to any tenant, check: DLI Construction Contractor Registration (if they have employees), proof of insurance, and, for any drilling or well rehab work, a current Board of Water Well Contractors license on the DNRC list.
-- **Brand:** see §1. No "Bitterroot Pump" or "Bitterroot Pump Service" in any form; add the non-affiliation line; never target that company's name as a keyword. [TODO: Luke to approve the brand name.]
+- **Brand:** see §1. No "Bitterroot Pump" or "Bitterroot Pump Service" in any form; add the non-affiliation line; never target that company's name as a keyword. Brand approved 2026-10-14.
 - **Safety:** no DIY instructions involving the well cap, in-well work, or wiring. Breaker, gauge, and switch observation only, with "if you're unsure, don't touch it; call a pro."
 - No "certified", "licensed", "insured", "bonded", or badge language about ourselves. No NGWA or manufacturer logos.
 - No reviews, testimonials, before/after photos, or "customer" stories.
 - Health content only from the §4 facts, with sources cited on the page. Add "general information, not medical or legal advice" on Water testing, Home sales, and FAQ.
-- Disclosure (footer + About), Luke to approve: "Bitterroot Valley Well Pump Help connects Bitterroot Valley property owners with independent local well and pump companies. We are not a pump, plumbing, or drilling company and do not perform services ourselves. Not affiliated with any company of a similar name."
+- Disclosure (footer + About), approved by Luke 2026-10-14: "Bitterroot Valley Well Pump Help connects Bitterroot Valley property owners with independent local well and pump companies. We are not a pump, plumbing, or drilling company and do not perform services ourselves. Not affiliated with any company of a similar name."
 - Photos (Unsplash) set the scene only: Bitterroot or western Montana landscapes, a generic well head or well house, a generic pressure tank. No captions, alt text, or placement implying they show our crew, our jobs, or our customers' homes.
 
 ## 12. Link and citation opportunities (verified to exist)
@@ -213,8 +213,8 @@ Also possible: water treatment dealers (e.g., Kinetico Quality Water Systems, Ha
 
 ## 16. Open questions for Luke
 
-1. Approve the on-site brand name ("Bitterroot Valley Well Pump Help" recommended) and the non-affiliation line (§1, §11).
-2. Approve the disclosure wording.
+1. ~~Approve the on-site brand name~~ Approved 2026-10-14: **"Bitterroot Valley Well Pump Help"**, with the non-affiliation line (§1, §11).
+2. ~~Approve the disclosure wording~~ Approved 2026-10-14 as written in §11.
 3. Confirm brief ID / candidate number and the domain price/registrar (Vercel?).
 4. ~~Twilio number~~ Provided 2026-10-14: **(406) 534-5191**. Use it for `{{TRACKING_PHONE}}` (tel: +14065345191).
 5. Form endpoint and lead routing.
@@ -229,7 +229,7 @@ Same as the Loveland brief §17, with these site-specific swaps:
 - Primary keyword "well pump repair Hamilton MT" in the first 100 words (hero names well pump repair and replacement in Hamilton and the Bitterroot Valley).
 - Topic H2s, e.g.: "No water from your well? Start here", "How a Bitterroot Valley well system works", "Well pump services in Hamilton and the Bitterroot Valley", "Montana well licensing: what's licensed and what isn't", "How much a well pump costs in Montana", "Testing your well water in Ravalli County", "Well pump FAQ for Bitterroot Valley homeowners". Numbered mono eyebrows keep the design voice.
 - The section drawing is one inline SVG well cross-section (casing, submersible pump, drop pipe, pitless adapter, frost line, pressure tank and switch). Static, a few KB.
-- Entity naming everywhere: "Bitterroot Valley Well Pump Help" (once approved), "Hamilton, Montana (Ravalli County)", always paired with the connector disclosure so assistants never describe us as a pump company or confuse us with Bitterroot Pump Service.
+- Entity naming everywhere: "Bitterroot Valley Well Pump Help" (approved), "Hamilton, Montana (Ravalli County)", always paired with the connector disclosure so assistants never describe us as a pump company or confuse us with Bitterroot Pump Service.
 - `/llms.txt`, robots.txt allowing AI crawlers, Bing Webmaster Tools, IndexNow on deploy, `dateModified` + visible "Last reviewed [Month Year]", Lighthouse mobile targets, zero client-side JS for content, `next/image` hero under ~100 KB on mobile, `next/font` self-hosted: all as in Loveland §17.
 - Accent color: a cold river blue or slate (well water, Bitterroot River), swapped into the shared WL design system. Not the Loveland palette.
 

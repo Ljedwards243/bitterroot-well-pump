@@ -42,7 +42,7 @@ export default function Privacy() {
           <h2>Calls</h2>
           <p>
             When you call the number on this site, our phone provider records call details such as your phone number and
-            the time and length of the call. If you leave a voicemail, it is recorded and stored so we can respond to it.
+            the time and length of the call. If you leave a voicemail, it is recorded, transcribed to text, and stored so we can respond to it.
           </p>
 
           <h2>How we use your information</h2>
