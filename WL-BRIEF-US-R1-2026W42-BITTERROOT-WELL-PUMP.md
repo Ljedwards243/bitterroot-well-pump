@@ -216,7 +216,7 @@ Also possible: water treatment dealers (e.g., Kinetico Quality Water Systems, Ha
 1. Approve the on-site brand name ("Bitterroot Valley Well Pump Help" recommended) and the non-affiliation line (§1, §11).
 2. Approve the disclosure wording.
 3. Confirm brief ID / candidate number and the domain price/registrar (Vercel?).
-4. Twilio number: buy a 406 (Montana) number and send it for `{{TRACKING_PHONE}}`.
+4. ~~Twilio number~~ Provided 2026-10-14: **(406) 534-5191**. Use it for `{{TRACKING_PHONE}}` (tel: +14065345191).
 5. Form endpoint and lead routing.
 6. GrokBot live Google check from a Hamilton/Missoula location for "well pump repair Hamilton MT" and "well pump service Bitterroot Valley".
 7. Any local Bitterroot knowledge for the Service Area page (housing types, acreage, well houses)?

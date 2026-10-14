@@ -14,7 +14,7 @@ All live in `lib/site.ts`. Anything that would render a placeholder checks `isCo
 
 | Placeholder | Where | Status |
 |---|---|---|
-| `{{TRACKING_PHONE}}` (+ `_TEL`, `_SCHEMA`) | `site.phone` / `phoneTel` / `phoneSchema` | **Needed.** Buy a 406 Twilio number. Until all three are set, every call button, the header number and the schema telephone are hidden, and the sticky bar and CTAs point to the form. Fill all three formats, e.g. `(406) 555-0123`, `+14065550123`, `+1-406-555-0123`. |
+| `{{TRACKING_PHONE}}` | `site.phone` / `phoneTel` / `phoneSchema` | **Done:** (406) 534-5191 (Twilio, voicemail-only until a tenant is signed) |
 | `{{FORM_ENDPOINT}}` | `site.formEndpoint` | **Needed before launch.** Until set, the form shows an error on submit and a no-JavaScript submit has nowhere to go. Any endpoint that accepts a POST (Formspree, Basin, a Make/Zapier webhook) works. Fields: `name`, `phone`, `email`, `town`, `need`, `without_water`, `description`, `source_page`. |
 | `{{GA4_ID}}` | `site.ga4Id` | Optional. GA4 loads lazily once set; events: `phone_click`, `form_start`, `form_submit` (with `need` and `without_water`, brief §13). |
 | `{{GSC_VERIFICATION}}` | `site.gscVerification` | Or verify the domain by DNS in Search Console instead. |
@@ -75,7 +75,7 @@ No separate town pages at launch: the brief has no verified town-specific well f
 ## Post-launch (Luke)
 
 1. Add the project in Vercel from this repo; add `bitterrootwellpump.com` and `www.bitterrootwellpump.com` (www 301s to the apex in `next.config.ts`). Confirm Vercel Firewall isn't blocking AI bots.
-2. Set the three phone formats and `{{FORM_ENDPOINT}}`, plus the optional IDs, then redeploy.
+2. Set `{{FORM_ENDPOINT}}`, plus the optional IDs, then redeploy.
 3. Verify in Google Search Console and Bing Webmaster Tools; submit `https://bitterrootwellpump.com/sitemap.xml`; request indexing of home and service pages. The frozen-line page should be indexed before winter.
 4. Before forwarding calls to a tenant, check DLI contractor registration (if they have employees), proof of insurance, and for drilling or well rehab work a current Board of Water Well Contractors license (brief §11).
 5. Log monthly metrics in the WL Performance tab.

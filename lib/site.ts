@@ -9,12 +9,11 @@ export const site = {
   shortName: "BV Well Pump Help",
   tagline: "Connecting Bitterroot Valley homeowners with established local well & pump companies",
   url: "https://bitterrootwellpump.com",
-  // TODO: Luke to buy a 406 Twilio number (brief §16 item 4). Display, tel: and schema
-  // formats are kept together so they never drift. Until set, every call button is hidden
-  // and the site sends visitors to the form instead (no placeholder is ever shown).
-  phone: "{{TRACKING_PHONE}}", // e.g. "(406) 555-0123"
-  phoneTel: "{{TRACKING_PHONE_TEL}}", // e.g. "+14065550123"
-  phoneSchema: "{{TRACKING_PHONE_SCHEMA}}", // e.g. "+1-406-555-0123"
+  // Twilio tracking line (brief §16 item 4, supplied 2026-10-14). Display, tel: and schema
+  // formats are kept together so they never drift.
+  phone: "(406) 534-5191",
+  phoneTel: "+14065345191",
+  phoneSchema: "+1-406-534-5191",
   // Lead form POST target (standards §11).
   formEndpoint: "{{FORM_ENDPOINT}}",
   ga4Id: "{{GA4_ID}}",
